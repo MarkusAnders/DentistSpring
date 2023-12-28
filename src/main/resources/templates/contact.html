@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Denstity</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="../static/css/main.css">
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <div class="container">
+            <div class="header__top top">
+                <div class="top__logotype logotype">
+                    <a href="/" class="logotype__link">
+                        <img src="/img/icon/logotype.svg" alt="" class="logotype__icon">
+                    </a>
+                </div>
+                <nav class="top__menu menu">
+                    <ul class="menu__list">
+                        <li class="menu__item"><a href="#" class="menu__link">О нас</a></li>
+                        <li class="menu__item"><a href="/provisionServices/main" class="menu__link">Услуги</a></li>
+                        <li class="menu__item"><a href="/doctors/main" class="menu__link">Специалисты</a></li>
+                        <li class="menu__item"><a href="/receptions/main" class="menu__link">Приемы</a></li>
+                        <li class="menu__item"><a href="/contact" class="menu__link menu__link_active">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="top__info info">
+                    <div class="info__workhouse workhouse">
+                        <img src="/img/icon/calendar.svg" alt="" class="workhouse__icon icon">
+                        <p class="workhouse__text">c 09:00 - 16:00 <span>пн-сб</span></p>
+                    </div>
+                    <div class="info__phone phone">
+                        <a href="tel:+79003331040" class="phone__link">
+                            <img src="/img/icon/phone.svg" alt="" class="phone__icon icon">
+                            <span>+7(900)333-10-40</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="top__order-call call">
+                    <a href="#" class="call__link btn">Заказать звонок</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="contacts">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="contacts__wave">
+                <path fill="#38BCEA" fill-opacity="1" d="M0,96L18.5,117.3C36.9,139,74,181,111,197.3C147.7,213,185,203,222,181.3C258.5,160,295,128,332,144C369.2,160,406,224,443,208C480,192,517,96,554,69.3C590.8,43,628,85,665,128C701.5,171,738,213,775,240C812.3,267,849,277,886,245.3C923.1,213,960,139,997,112C1033.8,85,1071,107,1108,138.7C1144.6,171,1182,213,1218,208C1255.4,203,1292,149,1329,160C1366.2,171,1403,245,1422,282.7L1440,320L1440,320L1421.5,320C1403.1,320,1366,320,1329,320C1292.3,320,1255,320,1218,320C1181.5,320,1145,320,1108,320C1070.8,320,1034,320,997,320C960,320,923,320,886,320C849.2,320,812,320,775,320C738.5,320,702,320,665,320C627.7,320,591,320,554,320C516.9,320,480,320,443,320C406.2,320,369,320,332,320C295.4,320,258,320,222,320C184.6,320,148,320,111,320C73.8,320,37,320,18,320L0,320Z"></path>
+            </svg>
+            <div class="container">
+                <div class="contact__wrapper">
+                    <h2 class="contact__title title">Контакты</h2>
+                    <div class="contact__wrapp">
+                        <div class="contact__left">
+                            <a href="tel:+79003331040" class="contact__phone phone">+7(900)333-10-40</a>
+                            <a href="mailto:client@smartclinik.ru" class="contact__mail mail">client@smartclinik.ru</a>
+                            <p class="contact__addres">Стоматологическая клиника<br> ул. Мечникова, 41, Муром</p>
+                        </div>
+                        <div class="contact__rigth">
+                            <div class="map__wrapper">
+                                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae8fadb1e0d2229f93f18c8a110171218aacd7d724255cb51297963e62ac0a832&amp;source=constructor" width="800" height="500" frameborder="0"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="consultation">
+            <div class="container">
+                <div class="consultation__wrapper">
+                    <div class="consultation__left">
+                        <h2 class="cosultation__title title">Онлайн консультация специалиста по аудио и видео связи, Бесплатно.</h2>
+                        <p class="cosultation__text">
+                            Укажите вой номер телефона, мы перезвоним и подберем для вас удобное время для консультации.
+                            Или позвоните нам сами — 
+                            <a href="tel:+79003331040" class="cosultatation__phone">+7 900 333 10 40</a>
+                            <form action="" class="consultation__form form">
+                                <input type="text" class="form__phone mask-phone" placeholder="Телефон">
+                                <button class="form__btn btn consultation__btn">Записаться на прием</button>
+                            </form>
+                        </p>
+                    </div>
+                    <img src="/img/consultation-doctor.png" alt="" class="consultation__img">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__social social">
+                    <div class="social__google google">
+                        <img src="/img/icon/google.svg" alt="" class="google__icon">
+                    </div>
+                    <div class="social__inst inst">
+                        <img src="/img/icon/instagram.svg" alt="" class="inst__icon">
+                    </div>
+                    <div class="social__in in">
+                        <img src="/img/icon/in.svg" alt="" class="in__icon">
+                    </div>
+                </div>
+                <div class="footer__licenzy licenzy">
+                    <p class="licenzy__text">ООО «Дент», лицензия №ЛО-86-8681-01868686047 от 13.02.2099 <br> © 2018-2021</p>
+                </div>
+                <div class="footer__policy policy">
+                    <p class="policy__text">
+                        Политика в отношении обработки <br> персональных данных
+                    </p>
+                </div>
+                <div class="footer__logotype logotype">
+                    <a href="/" class="logotype__link">
+                        <img src="/img/icon/logotype.svg" alt="" class="logotype__icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<!-- Создается круг -->
+<div class="scroll-up ">
+    <svg class="scroll-up__svg" viewBox="-2 -2 52 52">
+        <path
+                class="scroll-up__svg-path"
+                d="
+                        M24,0
+                        a24,24 0 0,1 0,48
+                        a24,24 0 0,1 0,-48
+                    "
+        />
+    </svg>
+</div>
+<script src="js/scrollToTop.js"></script>
+<script src="/js/jquery.min.js"></script>
+<script src="/js/jquery.maskedinput.min.js"></script>
+<script src="/js/site.js"></script>
+</body>
+</html>

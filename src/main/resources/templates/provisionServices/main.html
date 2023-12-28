@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Denstity</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="../../static/css/main.css">
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <div class="container">
+            <div class="header__top top">
+                <div class="top__logotype logotype">
+                    <a href="/" class="logotype__link">
+                        <img src="/img/icon/logotype.svg" alt="" class="logotype__icon">
+                    </a>
+                </div>
+                <nav class="top__menu menu">
+                    <ul class="menu__list">
+                        <li class="menu__item"><a href="#" class="menu__link">О нас</a></li>
+                        <li class="menu__item"><a href="/provisionServices/main" class="menu__link menu__link_active">Услуги</a></li>
+                        <li class="menu__item"><a href="/doctors/main" class="menu__link ">Специалисты</a></li>
+                        <li class="menu__item"><a href="/receptions/main" class="menu__link">Приемы</a></li>
+                        <li class="menu__item"><a href="/contact" class="menu__link">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="top__info info">
+                    <div class="info__workhouse workhouse">
+                        <img src="/img/icon/calendar.svg" alt="" class="workhouse__icon icon">
+                        <p class="workhouse__text">c 09:00 - 16:00 <span>пн-сб</span></p>
+                    </div>
+                    <div class="info__phone phone">
+                        <a href="tel:+79003331040" class="phone__link">
+                            <img src="/img/icon/phone.svg" alt="" class="phone__icon icon">
+                            <span>+7(900)333-10-40</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="top__order-call call">
+                    <a href="#" class="call__link btn">Заказать звонок</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="section__service">
+            <div class="container">
+                <a href="/provisionServices/create" class="btn btn__create btn__create-service">Добавить услугу</a>
+                <div class="service__wrapper">
+                    <div class="service" th:each="provisionService : ${provisionServices}">
+                        <a th:href="@{'/provisionServices/details/' + ${provisionService.id}}" class="service__link">
+                            <div class="service__left">
+                                <p class="service__name service__text" th:text="${provisionService.name}"></p>
+                                <p class="service__description" th:text="${provisionService.description}"></p>
+                            </div>
+                            <div class="serivce__rigth">
+                                <p class="service__price service__text" th:text="${provisionService.price}"> <span>&#x20bd</span></p>
+                            </div>
+                        </a>
+                        <a th:href="@{'/provisionServices/delete/' + ${provisionService.id}}" class="delete-btn card__btn-delete service__detele">X</a>
+                        <a th:href="@{'/provisionServices/update/' + ${provisionService.id}}" class="btn btn__edit service__edit">Редактировать</a>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__social social">
+                    <div class="social__google google">
+                        <img src="/img/icon/google.svg" alt="" class="google__icon">
+                    </div>
+                    <div class="social__inst inst">
+                        <img src="/img/icon/instagram.svg" alt="" class="inst__icon">
+                    </div>
+                    <div class="social__in in">
+                        <img src="/img/icon/in.svg" alt="" class="in__icon">
+                    </div>
+                </div>
+                <div class="footer__licenzy licenzy">
+                    <p class="licenzy__text">ООО «Дент», лицензия №ЛО-86-8681-01868686047 от 13.02.2099 <br> © 2018-2021</p>
+                </div>
+                <div class="footer__policy policy">
+                    <p class="policy__text">
+                        Политика в отношении обработки <br> персональных данных
+                    </p>
+                </div>
+                <div class="footer__logotype logotype">
+                    <a href="/" class="logotype__link">
+                        <img src="/img/icon/logotype.svg" alt="" class="logotype__icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<!-- Создается круг -->
+<div class="scroll-up ">
+    <svg class="scroll-up__svg" viewBox="-2 -2 52 52">
+        <path
+                class="scroll-up__svg-path"
+                d="
+                        M24,0
+                        a24,24 0 0,1 0,48
+                        a24,24 0 0,1 0,-48
+                    "
+        />
+    </svg>
+</div>
+<script src="js/scrollToTop.js"></script>
+</body>
+</html>

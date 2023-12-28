@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Denstity</title>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="../static/css/main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__top top">
+                    <div class="top__logotype logotype">
+                        <a href="/" class="logotype__link">
+                            <img src="img/icon/logotype.svg" alt="" class="logotype__icon">
+                        </a>
+                    </div>
+                    <nav class="top__menu menu">
+                        <ul class="menu__list">
+                            <li class="menu__item"><a href="#" class="menu__link">О нас</a></li>
+                            <li class="menu__item"><a href="/provisionServices/main" class="menu__link">Услуги</a></li>
+                            <li class="menu__item"><a href="/doctors/main" class="menu__link">Специалисты</a></li>
+                            <li class="menu__item"><a href="/receptions/main" class="menu__link">Приемы</a></li>
+                            <li class="menu__item"><a href="/contact" class="menu__link">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <div class="top__info info">
+                        <div class="info__workhouse workhouse">
+                            <img src="/img/icon/calendar.svg" alt="" class="workhouse__icon icon">
+                            <p class="workhouse__text">c 09:00 - 16:00 <span>пн-сб</span></p>
+                        </div>
+                        <div class="info__phone phone">
+                            <a href="tel:+79003331040" class="phone__link">
+                                <img src="/img/icon/phone.svg" alt="" class="phone__icon icon">
+                                <span>+7(900)333-10-40</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="top__order-call call">
+                        <a href="#" class="call__link btn">Заказать звонок</a>
+                    </div>              
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="subfolder">
+                <div class="container">
+                    <div class="subfolder__main-block main-block">
+                        <h1 class="main-block__title title">Лечение зубов в тот же день</h1>
+                        <p class="main-block__subtitle subtitle">Мы проведем полную консультацию, профессиональную гигиену полости рта, лечение зубов и десен</p>
+                        <div class="btn__wrap">
+                            <a href="/receptions/create" class="btn__appointment btn">Записаться на прием</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="characteristic__wrapper characteristic">
+                    <div class="characteristic_wrap">
+                        <div class="characteristic__block characteristic__team team">
+                            <div class="team__wrap block__wrap">
+                                <img src="/img/icon/dental-chel.svg" alt="" class="team__icon">
+                                <p class="team__text">Команда квалифицированных <br> специалистов</p>
+                            </div>
+                        </div>
+                        <div class="characteristic__block characteristic__cabinet cabinet">
+                            <div class="cabinet__wrap block__wrap">
+                                <img src="/img/icon/styl.svg" alt="" class="cabinet__icon">
+                                <p class="cabinet__text">3 стоматологических <br >кабинета</p>
+                            </div>
+                        </div>
+                        <div class="characteristic__block characteristic__location location">
+                            <div class="location__wrap block__wrap">
+                                <img src="/img/icon/map-blue.svg" alt="" class="location__icon">
+                                <p class="location__text">Удобное <br> расположение</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="trust">
+                <div class="container">
+                    <div class="trust__wrapper">
+                        <h3 class="trust__title title">Нам доверяют пациенты</h3>
+                        <div class="trust__enum enum">
+                            <div class="enum__one enum__block">
+                                <ol class="enum__one_number title enum_number">1</ol>
+                                <h4 class="enum__one_title enum__title">Честные цены, без хитрых уловок</h4>
+                                <p class="enum__one_text enum__text">Фиксируем цены в плане лечения, не повышаем в процессе.</p>
+                            </div>
+                            <div class="enum__two enum__block">
+                                <ol class="enum__two_number title enum_number">2</ol>
+                                <h4 class="enum__two_title enum__title">Опытные Врачи</h4>
+                                <p class="enum__two_text enum__text">Врачи постоянно совершенствуются в своей специальности, несмотря на богатый опыт работы.</p>
+                            </div>
+                            <div class="enum__three enum__block">
+                                <ol class="enum__three_number title enum_number">3</ol>
+                                <h4 class="enum__three_title enum__title">Комфортные условия</h4>
+                                <p class="enum__three_text enum__text">Уютная обстановка и отзывчивый персонал сделают поход к стоматологу максимально приятным.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+            <section class="consultation">
+                <div class="container">
+                    <div class="consultation__wrapper">
+                        <div class="consultation__left">
+                            <h2 class="cosultation__title title">При фиксации брекетов на обе челюсти получи сертификат на 7000 рублей</h2>
+                            <p class="cosultation__text">
+                                Укажите вой номер телефона, мы перезвоним и подберем для вас удобное время для консультации.
+                                Или позвоните нам сами — 
+                                <a href="tel:+79003331040" class="cosultatation__phone">+7 900 333 10 40</a>
+                                <form action="" class="consultation__form form">
+                                    <input type="text" class="form__phone mask-phone" placeholder="Телефон">
+                                    <button class="form__btn btn consultation__btn">Записаться на прием</button>
+                                </form>
+                            </p>
+                        </div>
+                        <img src="/img/cosult-doctor.png" alt="" class="consultation__img">
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__wrapper">
+                    <div class="footer__social social">
+                        <div class="social__google google">
+                            <img src="/img/icon/google.svg" alt="" class="google__icon">
+                        </div>
+                        <div class="social__inst inst">
+                            <img src="/img/icon/instagram.svg" alt="" class="inst__icon">
+                        </div>
+                        <div class="social__in in">
+                            <img src="/img/icon/in.svg" alt="" class="in__icon">
+                        </div>
+                    </div>
+                    <div class="footer__licenzy licenzy">
+                        <p class="licenzy__text">ООО «Дент», лицензия №ЛО-86-8681-01868686047 от 13.02.2099 <br> © 2018-2021</p>
+                    </div>
+                    <div class="footer__policy policy">
+                        <p class="policy__text">
+                            Политика в отношении обработки <br> персональных данных
+                        </p>
+                    </div>
+                    <div class="footer__logotype logotype">
+                        <a href="/" class="logotype__link">
+                            <img src="/img/icon/logotype.svg" alt="" class="logotype__icon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- Создается круг -->
+    <div class="scroll-up ">
+        <svg class="scroll-up__svg" viewBox="-2 -2 52 52">
+            <path
+                    class="scroll-up__svg-path"
+                    d="
+                        M24,0
+                        a24,24 0 0,1 0,48
+                        a24,24 0 0,1 0,-48
+                    "
+            />
+        </svg>
+    </div>
+    <script src="js/scrollToTop.js"></script>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.maskedinput.min.js"></script>
+    <script src="/js/site.js"></script>
+</body>
+</html>
