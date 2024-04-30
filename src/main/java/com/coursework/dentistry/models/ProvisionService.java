@@ -24,6 +24,7 @@ public class ProvisionService {
     private String name;
 
     @NotBlank(message = "Поле обязательно для заполнения")
+    @Size(min = 1, max = 100, message = "Слишком короткое или слишком длинное описание")
     @Column(nullable = false)
     private String description;
 

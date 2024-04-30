@@ -68,6 +68,25 @@ html, body{
     flex-grow: 1;  
 }
 
+@keyframes call-phone{
+    0%{
+        color: #000;
+        stroke: #000000;
+    }
+    50%{
+        color: #0c85ff;
+        stroke: #0c85ff;
+    }
+    100%{
+        color: #000;
+        stroke: #000;
+    }
+}
+
+.call-phone{
+    animation: call-phone 3s ease-in-out infinite; ;
+}
+
 .container{
     width: 1170px;
     padding: 0 15px;
